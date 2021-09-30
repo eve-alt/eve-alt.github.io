@@ -1,1 +1,53 @@
-Removed old webpage. Work in progress. New one coming soon.
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+                overflow: hidden;
+                background: #111;
+                font-family: consolas, monospace;
+            }
+            #accounts {
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                z-index: 1;
+            }
+            @media (max-width: 639px) {
+                #cat {
+                    display:none;
+                }
+            }
+            #cat {
+                position: fixed;
+                z-index: 999;
+                width: 125px;
+                height: 80px;
+                bottom: 0;
+                right: 20px;
+                cursor: pointer;
+                overflow: hidden;
+                background:transparent url("assets/img/pleb1.png") 20px 0 no-repeat;
+            }
+            #cat i {
+                position: absolute;
+                width: 100px;
+                height: 35px;
+                bottom: -35px;
+                left: 18;
+                background: transparent url("assets/img/pleb1.png") 0px -85px no-repeat;
+                transition: all .6s ease;
+            }
+            #cat:hover i {
+                bottom: 0;
+                transition: all .6s ease-out;
+            }
+        </style>
+        <body>
+            <i id="cat">
+                <i></i>
+            </i>
+        </body>
+    </head>
+</html>
