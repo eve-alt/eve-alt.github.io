@@ -14,6 +14,16 @@
                 top: 15px;
                 z-index: 1;
             }
+            a {
+                display: inline-block;
+                margin: 0 5px;
+                font-size: 24px;
+                color: #fff;
+                text-decoration: underline;
+            }
+            a:hover {
+                text-decoration: none;
+            }
             @media (max-width: 639px) {
                 #pleb {
                     display:none;
@@ -44,10 +54,22 @@
                 transition: all .6s ease-out;
             }
         </style>
-        <body>
-            <i id="pleb">
-                <i></i>
-            </i>
-        </body>
+        <script type="text/javascript" src="assets/js/glitch/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/glitch/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/js/glitch/mdb.min.js"></script>
+        <script type="text/javascript" src="assets/js/glitch/zn.min.js"></script>
     </head>
+    <body>
+        <canvas id="c"></canvas>
+        <div id="accounts">
+            <a class="glitch-label" rel="nofollow" target="_blank" id="fb" href="https://facebook.com/kizushite">FB</a>
+            <a class="glitch-label" rel="nofollow" target="_blank" id="twt" href="https://twitter.com/lu_0666">Twitter</a>
+            <a class="glitch-label" rel="nofollow" target="_blank" id="ig" href="https://instagram.com/lu_0666">Instagram</a>
+            <a class="glitch-label" rel="nofollow" target="_blank" id="mail" href="mailto:pauhabal@gmail.com">Mail</a>
+        </div>
+        <i id="pleb">
+            <i></i>
+        </i>
+        <script type="text/javascript" src="assets/js/matrix/matrix.js"></script>
+    </body>
 </html>
