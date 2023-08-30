@@ -1,8 +1,21 @@
 const canvas = document.getElementById('c');
 const c = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-//Falling Text
+
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    // Update the 's' array based on the new canvas width
+    s = [];
+
+    for (let i = 0; i < canvas.width / inc; i++) {
+        s[i] = new Streak(inc / 2 + i * inc, Math.random() * canvas.height - canvas.height, Math.random() * 15 + 20);
+    }
+}
+
+window.addEventListener('load', resizeCanvas);
+window.addEventListener('resize', resizeCanvas);
+
 class Text {
 	constructor(x, y, v, len, i) {
 		//Movement Data
@@ -57,7 +70,7 @@ class Streak {
 		}
 	}
 }
-let inc = 26;
+let inc = 16;
 //Adding Streaks
 let s = [];
 for (let i = 0; i < canvas.width / inc; i++) {
@@ -73,4 +86,5 @@ function draw() {
 	//Running Streaks
 	for (let i = 0; i < s.length; i++) s[i].run();
 }
+resizeCanvas();
 draw();

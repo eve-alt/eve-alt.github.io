@@ -1,0 +1,74 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background: #111;
+    font-family: consolas, monospace;
+}
+#beta {
+    position:absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 1;
+}
+#color-test {
+    color: #000000; /* testing some things */
+    text-shadow: 
+        1px 1px 0 #00FF00, 
+        2px 2px 0 #FF0000, 
+        -2px -2px 0 #0000FF, 
+        3px -3px 0 #FF00FF; 
+    opacity: 0.9; 
+}
+#accounts {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 1;
+}
+#tts {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    z-index: 1;
+}
+a {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: underline;
+    text-shadow: 2px 1px 0 #00FF00;
+}
+a:hover {
+    text-decoration: none;
+}
+@media (max-width: 639px) {
+    #pleb {
+        display:none;
+    }
+}
+#pleb {
+    position: fixed;
+    z-index: 999;
+    width: 125px;
+    height: 80px;
+    bottom: 0;
+    right: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    background:transparent url("../img/pleb1.png") 20px 0 no-repeat;
+}
+#pleb i {
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    bottom: -35px;
+    left: 18;
+    background: transparent url("../img/pleb1.png") 0px -85px no-repeat;
+    transition: all .6s ease;
+}
+#pleb:hover i {
+    bottom: 0;
+    transition: all .6s ease-out;
+}

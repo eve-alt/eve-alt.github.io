@@ -1,72 +1,21 @@
 <html>
     <head>
-        <style>
-            body {
-                margin: 0px;
-                padding: 0px;
-                overflow: hidden;
-                background: #111;
-                font-family: consolas, monospace;
-            }
-            #accounts {
-                position: absolute;
-                right: 15px;
-                top: 15px;
-                z-index: 1;
-            }
-            a {
-                display: inline-block;
-                margin: 0 5px;
-                font-size: 24px;
-                color: #fff;
-                text-decoration: underline;
-            }
-            a:hover {
-                text-decoration: none;
-            }
-            @media (max-width: 639px) {
-                #pleb {
-                    display:none;
-                }
-            }
-            #pleb {
-                position: fixed;
-                z-index: 999;
-                width: 125px;
-                height: 80px;
-                bottom: 0;
-                right: 20px;
-                cursor: pointer;
-                overflow: hidden;
-                background:transparent url("assets/img/pleb1.png") 20px 0 no-repeat;
-            }
-            #pleb i {
-                position: absolute;
-                width: 100px;
-                height: 35px;
-                bottom: -35px;
-                left: 18;
-                background: transparent url("assets/img/pleb1.png") 0px -85px no-repeat;
-                transition: all .6s ease;
-            }
-            #pleb:hover i {
-                bottom: 0;
-                transition: all .6s ease-out;
-            }
-        </style>
+        <link rel="stylesheet" href="assets/css/style.css">
         <script type="text/javascript" src="assets/js/glitch/jquery.min.js"></script>
         <script type="text/javascript" src="assets/js/glitch/bootstrap.min.js"></script>
         <script type="text/javascript" src="assets/js/glitch/mdb.min.js"></script>
         <script type="text/javascript" src="assets/js/glitch/zn.min.js"></script>
     </head>
     <body>
+        <a class="glitch-label" id="beta" href="#"><span id="color-test">BETA</span></a>
         <canvas id="c"></canvas>
         <div id="accounts">
-            <a class="glitch-label" rel="nofollow" target="_blank" id="fb" href="https://facebook.com/kizushite">FB</a>
-            <a class="glitch-label" rel="nofollow" target="_blank" id="twt" href="https://twitter.com/lu_0666">Twitter</a>
-            <a class="glitch-label" rel="nofollow" target="_blank" id="ig" href="https://instagram.com/lu_0666">Instagram</a>
-            <a class="glitch-label" rel="nofollow" target="_blank" id="mail" href="mailto:pauhabal@gmail.com">Mail</a>
+            <a class="glitch-label" id="fb" href="https://facebook.com/kizushite">FB</a>
+            <a class="glitch-label" id="ig" href="https://instagram.com/a0.99.10.52.1">Instagram</a>
+            <a class="glitch-label" id="twt" href="https://github.com/eve-alt">Github</a>
+            <a class="glitch-label" id="mail" href="mailto:pauhabal@gmail.com">Mail</a>
         </div>
+        <a class="glitch-label" id="tts" href="#">TTS</a>
         <i id="pleb">
             <i></i>
         </i>
